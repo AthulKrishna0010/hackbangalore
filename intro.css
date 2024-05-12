@@ -1,0 +1,13 @@
+body{
+  
+    background-image: url("intro.gif");
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+      
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+  }

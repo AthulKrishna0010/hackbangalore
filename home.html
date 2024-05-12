@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Green Credit</title>
+        <link rel="stylesheet" href="home.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="head">
+            <img src="Synergy1.png"/>
+            
+            <div id="topdiv1">
+                <nav>
+                  <a href="home.html" id="topmenu">Home</a>
+                  <a href="about.html" id="topmenu">About Us</a>
+                  <a href="greencredit.html" id="topmenu">Green Credit</a>
+                  <a href="contact.html" id="topmenu">Contact</a>
+                </nav>
+                
+            </div>
+        </section>
+
+        
+            
+
+        <section class="contact">
+            <div id="contactinfo">
+                <h1>Synergy</h1>
+                <br>
+                <p>
+
+                  Synergy's essence lies in its dynamic blend of innovation and purpose, heralding a new era in sustainable investment. It serves as a conduit for angel investors to champion impactful projects, seamlessly intertwining financial gains with environmental stewardship
+                  Synergy is not just a platform; it's a catalyst for shaping a brighter, greener future for generations to come. </p>
+
+                <p>Sustainability means using resources wisely to meet current needs without harming the ability of future generations to meet their own. It's about living in harmony with nature, conserving resources, and making choices that benefit both people and the planet.</p>
+                <p>Explore our website to invest in sustainable projects. Support noble causes while enjoying financial benefits. Sustainable investments promote environmental and social progress while yielding returns. Join us in making a positive impact while securing your financial future. Together, let's build a better world and reap the rewards of sustainability</p> 
+               
+            </div>
+          </section>
+            <div id="form">
+                <form >
+                    <label for="name">Username</label><br>
+                    <input type="text" id="custname" placeholder="Enter username" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="custemail" placeholder="Enter your email id" required><br>
+                    <label>Registration Type:</label>
+                    <div id="toggle">
+                    <p id="rad">Organisation</p><input type="radio" name="registrationType" value="company" onchange="toggleRegistrationType()" id="radio">
+                      
+                    
+                  <p id="rad">Individual</p>
+                      <input type="radio"  name="registrationType" value="individual"  checked="checked" onchange="toggleRegistrationType()" id="radio">
+                    </div>
+                    
+                    <button id="formdata">Register</button>
+                </form>
+            </div>
+            <script>
+                document.getElementById("formdata").addEventListener("click", function() {
+                  // Open a new page
+                  var input1 = document.getElementById("custname").value.trim();
+                  var input2 = document.getElementById("custemail").value.trim();
+                
+                  if (input1 !== '' && input2 !== '') {
+                    // Open a new page
+                    window.open("posts.html");
+                  } else {
+                    alert("Please fill out both input fields.");
+                  }
+                });
+                </script>
+    </body>
+</html>

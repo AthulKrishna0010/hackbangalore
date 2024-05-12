@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: auto;
+    position: relative; /* Required for pseudo-element positioning */
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bg image g.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(6px);
+    z-index: -1; /* Ensure the pseudo-element is behind other content */
+  }
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    background-color: rgb(245,245,245,0.2);
+    bottom: 0;
+    top: 0;
+    padding-bottom: 3cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    
+    
+}
+
+#head img{
+    height: 130px;
+    width: 130px;
+    margin: 0cm 1cm 0cm;
+}
+
+
+#topmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0cm 1cm 0.5cm;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(45,106,79,0.4);
+    border-radius: 8%;
+    padding: 0.2cm 1cm 0.2cm;
+    
+}
+  
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+#top{
+    margin-left: 8cm ;
+    color: whitesmoke;
+    
+}
+
+#top h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-weight: 200;
+    margin-left: 1cm;
+}
+
+#prof{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8cm;
+    padding: 1cm 5cm 1cm 3cm;
+    background-color: rgb(0, 0, 0,0.4);
+    border-radius: 8%;
+    
+
+}
+
+#prof img{
+    border-radius: 100%;
+    
+}
+#bio{
+    display: flex;
+    flex-direction: column;
+    
+    color: whitesmoke;
+    margin-left: 4cm;
+}
+#biomenu{
+    margin-top: 0cm;  
+}
+
+#dashboard {
+    margin:1cm 1cm 1cm 9.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dashboard img{
+    height: 400px;
+    width: 800px;
+    border-radius: 8%;
+}
+
+#dashmenu{
+    margin-bottom: 1cm;
+}
