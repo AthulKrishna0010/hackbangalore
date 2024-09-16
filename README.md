@@ -1,4 +1,5 @@
-#We have made a website titled "Synergy"
+#We have made a website titled "Synergy"                                                                        
+
 Check it out on https://athulkrishna0010.github.io/hackbangalore/
 # Platform for investors to support sustainable campaigns and events aligned with their values.
 # Emphasis on positive impact on nature and community engagement.
